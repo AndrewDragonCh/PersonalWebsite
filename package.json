@@ -5,12 +5,12 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router build",
-    "preview": "pnpm build && vite preview",
-    "deploy": "pnpm build && wrangler deploy",
+    "preview": "pnpm run build && vite preview",
+    "deploy": "pnpm run build && wrangler deploy",
     "cf-typegen": "wrangler types",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "pnpm cf-typegen && react-router typegen && tsc -b",
-    "postinstall": "pnpm cf-typegen"
+    "typecheck": "pnpm run cf-typegen && react-router typegen && tsc -b",
+    "postinstall": "pnpm run cf-typegen"
   },
   "dependencies": {
     "@react-router/node": "^7.5.3",
