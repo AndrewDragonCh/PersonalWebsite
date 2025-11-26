@@ -1,1 +1,3 @@
 # Personal Website
+
+This was replaced with my upcoming blog...
